@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Ваш стиль CSS здесь -->
+</head>
+<body>
+    <form method="post">
+        <select name="address">
+            {% for user in nominated_users %}
+                <option value="{{ user }}">{{ user }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Подтвердить назначение</button>
+    </form>
+</body>
+</html>

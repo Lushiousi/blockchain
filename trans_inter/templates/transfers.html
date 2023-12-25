@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money Transfer App - Transfers</title>
+</head>
+<body>
+    <h1>Transfers</h1>
+    <table>
+        <tr>
+            <th>Sender</th>
+            <th>Receiver</th>
+            <th>Amount</th>
+            <th>Code Word</th>
+            <th>Confirmed</th>
+        </tr>
+        {% for transfer in transfers %}
+        <tr>
+            <td>{{ transfer.sender }}</td>
+            <td>{{ transfer.receiver }}</td>
+            <td>{{ transfer.amount }}</td>
+            <td>{{ transfer.codeWord }}</td>
+            <td>{{ transfer.confirmed }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
